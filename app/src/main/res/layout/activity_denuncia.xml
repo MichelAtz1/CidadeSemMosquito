@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_denuncia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00796B"
+    android:focusable="true" android:focusableInTouchMode="true"
+    tools:context="br.desenvolvedor.michelatz.cidadesemmosquito.Denuncia">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabela"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="330dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="  Descrição:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:id="@+id/textView3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:layout_span="2"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:ems="10"
+                        android:id="@+id/edtDescricao"
+                        android:textColorHint="#000000"
+                        android:hint="Descreva o Foco (Opcional)" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="  Cidade: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtCidade"
+                        android:hint="Cidade..."
+                        android:clickable="false"
+                        android:layout_span="2"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="  Rua:"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_span="2"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtRua"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColorHint="#000000"
+                        android:textColor="#000000"
+                        android:layout_span="2"
+                        android:hint="Rua..." />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="  Bairro: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:text="Numero: "
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textColor="#000000"/>
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtBairro"
+                        android:hint="Bairro..."
+                        android:text="Eiiiiii"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColorHint="#000000"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="55dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColorHint="#000000"
+                        android:textColor="#000000"
+                        android:id="@+id/edtNumero"
+                        android:hint="Numero..." />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="  Ponto de Referência: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:typeface="sans"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:layout_span="2"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:textColorHint="#000000"
+                        android:textColor="#000000"
+                        android:ems="10"
+                        android:id="@+id/edtPonto"
+                        android:hint="Indique uma Referência: (Opcional)" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+            </TableLayout>
+
+
+
+            <Button
+                android:text="Tirar Foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:onClick="foto"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/foto"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/foto"
+                android:id="@+id/foto"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:textSize="40sp"
+        android:elevation="6dp"
+        android:textColor="#FFFFFF"
+        android:text=" ? "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="10dp"
+        android:onClick="botaoAjuda"
+        android:background="@drawable/fundo"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:text="Salvar Denúncia"
+        android:onClick="salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button6"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <include
+        android:id="@+id/inc_tb_botton"
+        layout="@layout/toolbar_botton"/>
+</RelativeLayout>

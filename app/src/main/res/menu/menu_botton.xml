@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.desenvolvedor.michelatz.cidadesemmosquito.Dicas">
+
+    <item
+        android:title="Inicio"
+        android:id="@+id/acao_inicio"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_inicio_branco"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Denuncia"
+        android:id="@+id/acao_denuncia"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_denuncia_branco"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Mapa"
+        android:id="@+id/acao_mapa"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_mapa_branco"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Minhas Denúncias"
+        android:orderInCategory="100"
+        android:id="@+id/acao_minhas_denuncias"
+        android:icon="@drawable/ic_minhas_denuncias_branco"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Dicas"
+        android:orderInCategory="100"
+        android:id="@+id/acao_dicas"
+        android:icon="@drawable/ic_dicas_branco"
+        app:showAsAction="always"/>
+
+    <item
+        android:title=""
+        android:id="@+id/espaco"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+
+</menu>

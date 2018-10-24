@@ -1,0 +1,56 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.desenvolvedor.michelatz.cidadesemmosquito.PrincipalActivity">
+
+    <item
+        android:title="Menu"
+        android:id="@+id/action_Menu"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:title="Inicio"
+                android:id="@+id/acao_inicio_cima"
+                android:icon="@drawable/ic_inicio"/>
+
+            <item
+                android:title="Denuncia"
+                android:id="@+id/acao_denuncia_cima"
+                android:icon="@drawable/ic_denuncia"/>
+
+            <item
+                android:title="Mapa"
+                android:id="@+id/acao_mapa_cima"
+                android:icon="@drawable/ic_mapa"/>
+
+            <item
+                android:title="Minhas Denúncias"
+                android:id="@+id/acao_minhas_denuncias_cima"
+                android:icon="@drawable/ic_minhas_denuncias"/>
+
+            <item
+                android:title="Dicas"
+                android:id="@+id/acao_dicas_cima"
+                android:icon="@drawable/ic_dicas"/>
+
+            <item
+                android:title="Referências"
+                android:id="@+id/acao_referencia_cima"
+                android:icon="@drawable/referencia"/>
+
+            <item
+                android:title="Equipe"
+                android:id="@+id/acao_equipe_cima"
+                android:icon="@drawable/equipe"/>
+
+            <item
+                android:title="Logout"
+                android:id="@+id/acao_logout_cima"
+                android:icon="@drawable/logout"/>
+
+
+        </menu>
+    </item>
+</menu>

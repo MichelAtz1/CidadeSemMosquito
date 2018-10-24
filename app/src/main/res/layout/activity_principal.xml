@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundomenor"
+    tools:context="br.desenvolvedor.michelatz.cidadesemmosquito.PrincipalActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/scrollView">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="280dp"
+            android:background="@android:color/transparent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:text="Denunciar Foco"
+                    android:id="@+id/button"
+                    android:textStyle="bold"
+                    android:onClick="denuncias" />
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:text="Mapa dos Focos"
+                    android:textSize="20dp"
+                    android:onClick="mapa"
+                    android:textStyle="bold"
+                    android:id="@+id/button2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:text="Minhas denuncias"
+                    android:textStyle="bold"
+                    android:onClick="listaDenuncias"
+                    android:id="@+id/button3" />
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Dicas"
+                    android:textSize="20dp"
+                    android:onClick="dicas"
+                    android:textStyle="bold"
+                    android:id="@+id/button4" />
+
+            </TableRow>
+
+        </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:textSize="40sp"
+                android:elevation="6dp"
+                android:textColor="#FFFFFF"
+                android:text=" ? "
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="10dp"
+                android:onClick="botaoAjuda"
+                android:background="@drawable/fundo"
+                android:stateListAnimator="@null" />
+
+
+</RelativeLayout>
